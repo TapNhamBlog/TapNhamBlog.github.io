@@ -1,6 +1,5 @@
 {
   "homepage": "https://tapnhamblog.github.io/tapnhamblog",
-  "name": "tapnhamblog",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
