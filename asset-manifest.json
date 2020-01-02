@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/TapNhamBlog/TapNhamBlog.github.io/static/css/main.d1b05096.chunk.css",
+    "main.js": "/TapNhamBlog/TapNhamBlog.github.io/static/js/main.b3549193.chunk.js",
+    "main.js.map": "/TapNhamBlog/TapNhamBlog.github.io/static/js/main.b3549193.chunk.js.map",
+    "runtime-main.js": "/TapNhamBlog/TapNhamBlog.github.io/static/js/runtime-main.a2cf4db6.js",
+    "runtime-main.js.map": "/TapNhamBlog/TapNhamBlog.github.io/static/js/runtime-main.a2cf4db6.js.map",
+    "static/js/2.4ee43297.chunk.js": "/TapNhamBlog/TapNhamBlog.github.io/static/js/2.4ee43297.chunk.js",
+    "static/js/2.4ee43297.chunk.js.map": "/TapNhamBlog/TapNhamBlog.github.io/static/js/2.4ee43297.chunk.js.map",
+    "index.html": "/TapNhamBlog/TapNhamBlog.github.io/index.html",
+    "precache-manifest.df004d31d36872dfa6c8837114f803b6.js": "/TapNhamBlog/TapNhamBlog.github.io/precache-manifest.df004d31d36872dfa6c8837114f803b6.js",
+    "service-worker.js": "/TapNhamBlog/TapNhamBlog.github.io/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/TapNhamBlog/TapNhamBlog.github.io/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.4ee43297.chunk.js.LICENSE": "/TapNhamBlog/TapNhamBlog.github.io/static/js/2.4ee43297.chunk.js.LICENSE",
+    "static/media/logo.svg": "/TapNhamBlog/TapNhamBlog.github.io/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a2cf4db6.js",
+    "static/js/2.4ee43297.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.b3549193.chunk.js"
+  ]
+}
