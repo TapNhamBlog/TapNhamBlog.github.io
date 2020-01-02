@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/TapNhamBlog/TapNhamBlog.github.io/static/css/main.d1b05096.chunk.css",
-    "main.js": "/TapNhamBlog/TapNhamBlog.github.io/static/js/main.b3549193.chunk.js",
-    "main.js.map": "/TapNhamBlog/TapNhamBlog.github.io/static/js/main.b3549193.chunk.js.map",
-    "runtime-main.js": "/TapNhamBlog/TapNhamBlog.github.io/static/js/runtime-main.a2cf4db6.js",
-    "runtime-main.js.map": "/TapNhamBlog/TapNhamBlog.github.io/static/js/runtime-main.a2cf4db6.js.map",
-    "static/js/2.4ee43297.chunk.js": "/TapNhamBlog/TapNhamBlog.github.io/static/js/2.4ee43297.chunk.js",
-    "static/js/2.4ee43297.chunk.js.map": "/TapNhamBlog/TapNhamBlog.github.io/static/js/2.4ee43297.chunk.js.map",
-    "index.html": "/TapNhamBlog/TapNhamBlog.github.io/index.html",
-    "precache-manifest.df004d31d36872dfa6c8837114f803b6.js": "/TapNhamBlog/TapNhamBlog.github.io/precache-manifest.df004d31d36872dfa6c8837114f803b6.js",
-    "service-worker.js": "/TapNhamBlog/TapNhamBlog.github.io/service-worker.js",
-    "static/css/main.d1b05096.chunk.css.map": "/TapNhamBlog/TapNhamBlog.github.io/static/css/main.d1b05096.chunk.css.map",
-    "static/js/2.4ee43297.chunk.js.LICENSE": "/TapNhamBlog/TapNhamBlog.github.io/static/js/2.4ee43297.chunk.js.LICENSE",
-    "static/media/logo.svg": "/TapNhamBlog/TapNhamBlog.github.io/static/media/logo.5d5d9eef.svg"
+    "main.css": "/static/css/main.d1b05096.chunk.css",
+    "main.js": "/static/js/main.8020cf11.chunk.js",
+    "main.js.map": "/static/js/main.8020cf11.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.dda57b69.js",
+    "runtime-main.js.map": "/static/js/runtime-main.dda57b69.js.map",
+    "static/js/2.4ee43297.chunk.js": "/static/js/2.4ee43297.chunk.js",
+    "static/js/2.4ee43297.chunk.js.map": "/static/js/2.4ee43297.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.1f6dcbfbc568127476d8994d8cbf7d37.js": "/precache-manifest.1f6dcbfbc568127476d8994d8cbf7d37.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.4ee43297.chunk.js.LICENSE": "/static/js/2.4ee43297.chunk.js.LICENSE",
+    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.a2cf4db6.js",
+    "static/js/runtime-main.dda57b69.js",
     "static/js/2.4ee43297.chunk.js",
     "static/css/main.d1b05096.chunk.css",
-    "static/js/main.b3549193.chunk.js"
+    "static/js/main.8020cf11.chunk.js"
   ]
 }
