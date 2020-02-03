@@ -105,7 +105,7 @@ cout << pNum_a << endl; //địa chỉ của biến num_a mà pNum_a đang giữ
 cout << *pNum_a << endl; //giá trị tại vùng nhớ mà pNum_a trỏ đến: biến num_a = 10
 ```
 
-Hành động trên được gọi là de-reference.
+Hành động trên được gọi là <b>de-reference</b>.
 
 Ngoài ra, biến con trỏ cũng là một biến nên nó cũng có địa chỉ của nó:
 
