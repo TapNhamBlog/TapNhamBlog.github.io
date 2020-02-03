@@ -1,0 +1,20 @@
+
+title: Hứa Anh Minh
+author: Hứa Anh Minh
+email: huaanhminh0412@gmail.com
+description: >- 
+  © 2017-2019 Hứa Anh Minh
+baseurl: ""
+url: https://huaanhminh.github.io/ 
+twitter_username: o0baragaki0o
+github_username:  HuaAnhMinh
+linkedin_username: minh-hứa-6808a6155
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  
+include:
+  - "_img"
