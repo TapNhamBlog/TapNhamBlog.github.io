@@ -6,14 +6,14 @@ layout: home
 ---
 
 <p style="
-        font-family:Fira Code;
-        font-size:120px;
-        text-align:center;
-        background-color: lightgrey;
-        border-style: hidden;
-        border-radius: 40px;
-            ">
-WELCOME
+    font-family: monospace;
+    font-size:120px;
+    text-align:center;
+    background-color: lightgrey;
+    border-style: hidden;
+    border-radius: 40px;"
+>
+    &gt;WELCOME/&lt;
 </p>
 
 <p style="text-align:center;">
