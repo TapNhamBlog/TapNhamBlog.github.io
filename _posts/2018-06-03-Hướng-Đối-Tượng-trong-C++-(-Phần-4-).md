@@ -8,7 +8,7 @@
 
 # INHERITANCE - KẾ THỪA TRONG HƯỚNG ĐỐI TƯỢNG
 
-Link phần 3: [Operator Overloading trong C++](https://huaanhminh.github.io/2018/06/03/H%C6%B0%E1%BB%9Bng-%C4%90%E1%BB%91i-T%C6%B0%E1%BB%A3ng-trong-C++-(-ph%E1%BA%A7n-3-).html)
+Link phần 3: [Operator Overloading trong C++](https://tapnhamblog.github.io/2018/06/03/H%C6%B0%E1%BB%9Bng-%C4%90%E1%BB%91i-T%C6%B0%E1%BB%A3ng-trong-C++-(-ph%E1%BA%A7n-3-).html)
 
 ## Kế thừa là gì?
 
@@ -26,17 +26,17 @@ Như lúc nãy, ta có thể nói (chú ý chữ in đậm): hình vuông “<b>
 
 Giả sử ta có class `Person` và class `Studen`t là như sau:
 
-![Example of Student and Person seperate](http://huaanhminh.github.io/_img/OOP_Person_Student_Seperate.png)
+![Example of Student and Person seperate](https://tapnhamblog.github.io/_img/OOP_Person_Student_Seperate.png)
 
 Như các bạn thấy, `Student` cũng là `Person`, nên tên (`_name`) và tuổi (`_age`) của `Student` cũng chính là tên và tuổi của `Person`, vậy thay vì làm 2 class tách biệt thế thì ta có cách nào mô hình hóa quan hệ giữa 2 class này không? Hãy xem thử hình sau:
 
-![Example of Student inherit from Person](http://huaanhminh.github.io/_img/OOP_Person_Student_Inherit.png)
+![Example of Student inherit from Person](https://tapnhamblog.github.io/_img/OOP_Person_Student_Inherit.png)
 
 Class Student kế thừa từ class `Person`, nên lúc này class `Person` được gọi là <b>Base class</b> – class cha, còn class `Student` được gọi là <b>Derived class</b> – class con; và ta dùng mũi tên trắng đi từ Derived class trỏ đến Base class như hình trên.
 
 Ngoài ra ta cũng có thể kế thừa nhiều tầng với nhiều nhánh con như sau:
 
-![Example multilevel-hierachical inheritance](http://huaanhminh.github.io/_img/OOP_Multilevel_Hierachical_Inheritance_Example.png)
+![Example multilevel-hierachical inheritance](https://tapnhamblog.github.io/_img/OOP_Multilevel_Hierachical_Inheritance_Example.png)
 
 Theo hình trên thì ta có class `Person` là Base class, class `Student` lúc này sẽ vừa là Base class vừa là Derived class còn 3 class Regular Student, College Student và In-service Student là Derived classses.
 
@@ -323,6 +323,6 @@ Vì mục đích của `operator=` là để gán giá trị, nên nếu như nh
 }(document, 'script', 'facebook-jssdk'));</script>
 
 
-<div class="fb-like" data-href="https://huaanhminh.github.io/2018/06/03/H%C6%B0%E1%BB%9Bng-%C4%90%E1%BB%91i-T%C6%B0%E1%BB%A3ng-trong-C++-(-Ph%E1%BA%A7n-4-).html" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+<div class="fb-like" data-href="https://tapnhamblog.github.io/2018/06/03/H%C6%B0%E1%BB%9Bng-%C4%90%E1%BB%91i-T%C6%B0%E1%BB%A3ng-trong-C++-(-Ph%E1%BA%A7n-4-).html" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 
-<div class="fb-comments" data-href="https://huaanhminh.github.io/2018/06/03/H%C6%B0%E1%BB%9Bng-%C4%90%E1%BB%91i-T%C6%B0%E1%BB%A3ng-trong-C++-(-Ph%E1%BA%A7n-4-).html" data-numposts="5"></div>
+<div class="fb-comments" data-href="https://tapnhamblog.github.io/2018/06/03/H%C6%B0%E1%BB%9Bng-%C4%90%E1%BB%91i-T%C6%B0%E1%BB%A3ng-trong-C++-(-Ph%E1%BA%A7n-4-).html" data-numposts="5"></div>

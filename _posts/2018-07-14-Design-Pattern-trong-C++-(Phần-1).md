@@ -48,7 +48,7 @@ Hãy tưởng tượng mỗi lần ta khởi động máy tính, log in vào Win
 
 Mô hình UML của singleton có lẽ là đơn giản nhất trong tất cả vì nó chỉ có như sau mà thôi:
 
-![singleton UML](http://huaanhminh.github.io/_img/singleton.png)
+![singleton UML](https://tapnhamblog.github.io/_img/singleton.png)
 
 Giải thích:
 
@@ -146,6 +146,6 @@ Và cuối chương trình ta gọi hàm `DeleteIntance` thôi.
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-<div class="fb-like" data-href="https://huaanhminh.github.io/2018/07/14/Design-Pattern-trong-C++-(Ph%E1%BA%A7n-1).html" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+<div class="fb-like" data-href="https://tapnhamblog.github.io/2018/07/14/Design-Pattern-trong-C++-(Ph%E1%BA%A7n-1).html" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 
-<div class="fb-comments" data-href="https://huaanhminh.github.io/2018/07/14/Design-Pattern-trong-C++-(Ph%E1%BA%A7n-1).html" data-numposts="5"></div>
+<div class="fb-comments" data-href="https://tapnhamblog.github.io/2018/07/14/Design-Pattern-trong-C++-(Ph%E1%BA%A7n-1).html" data-numposts="5"></div>

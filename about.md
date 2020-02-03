@@ -12,13 +12,13 @@ permalink: /about/
   });
 </script>
 
-<link rel="icon" type="image/png" href="http://huaanhminh.github.io/_img/HuaAnhMinh.ico">
+<link rel="icon" type="image/png" href="https://tapnhamblog.github.io/_img/HuaAnhMinh.ico">
 
 # Về tác giả
 Chào mọi người, mình là Hứa Anh Minh, là tác giả của blog này. Hiện tại mình là sinh viên khoa Công Nghệ Thông Tin chương trình đặc biệt của Trường Đại học Khoa Học Tự Nhiên Tp.HCM.
 
 <p style="text-align:center;">
-<img style="text-align:center;" src="http://huaanhminh.github.io/_img/HuaAnhMinh.jpg" alt="Hua Anh Minh" height="240" width="240" align="center">
+<img style="text-align:center;" src="https://tapnhamblog.github.io/_img/HuaAnhMinh.jpg" alt="Hua Anh Minh" height="240" width="240" align="center">
 </p>
 
 # Về blog

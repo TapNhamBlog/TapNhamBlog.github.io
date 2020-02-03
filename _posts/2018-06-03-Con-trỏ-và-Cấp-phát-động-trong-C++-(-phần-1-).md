@@ -8,7 +8,7 @@
 
 <i>Lưu ý: Bài viết này dành cho những bạn đã có kiến thức về C/C++ và bắt đầu học con trỏ hay gặp khó khăn trong quá trình học.</i>
 
-Link phần 2: [Con trỏ với mảng và cấu trúc](https://huaanhminh.github.io/2018/06/03/Con-tr%E1%BB%8F-v%C3%A0-C%E1%BA%A5p-ph%C3%A1t-%C4%91%E1%BB%99ng-trong-C++-(-ph%E1%BA%A7n-2-).html)
+Link phần 2: [Con trỏ với mảng và cấu trúc](https://tapnhamblog.github.io/2018/06/03/Con-tr%E1%BB%8F-v%C3%A0-C%E1%BA%A5p-ph%C3%A1t-%C4%91%E1%BB%99ng-trong-C++-(-ph%E1%BA%A7n-2-).html)
 
 Vào thời gian đầu khi mới học con trỏ, chắc hẳn các bạn cảm thấy bỡ ngỡ và gặp khá nhiều rắc rối như: “cái quái gì thế này??”, hay là “tôi là ai, đây là đâu, sao tôi lại ở đây????” và nhiều tình huống hài hước khác nữa. Một phần là do bản chất con trỏ là một dạng kiểu dữ liệu trừu tượng nên khiến cho những người mới học khó hình dung, và một phần nữa là do các tài liệu hướng dẫn không đề cập đến ứng dụng của con trỏ nên ít người hứng thú khi học. Ở series bài viết này mình sẽ hướng dẫn cho các bạn cách sử dụng con trỏ cơ bản mà những người học C/C++ đều phải biết.
 
@@ -217,6 +217,6 @@ int main()
 }(document, 'script', 'facebook-jssdk'));</script>
 
 
-<div class="fb-like" data-href="https://huaanhminh.github.io/2018/06/03/Con-tr%E1%BB%8F-v%C3%A0-C%E1%BA%A5p-ph%C3%A1t-%C4%91%E1%BB%99ng-trong-C++-(-ph%E1%BA%A7n-1-).html" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+<div class="fb-like" data-href="https://tapnhamblog.github.io/2018/06/03/Con-tr%E1%BB%8F-v%C3%A0-C%E1%BA%A5p-ph%C3%A1t-%C4%91%E1%BB%99ng-trong-C++-(-ph%E1%BA%A7n-1-).html" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 
-<div class="fb-comments" data-href="https://huaanhminh.github.io/2018/06/03/Con-tr%E1%BB%8F-v%C3%A0-C%E1%BA%A5p-ph%C3%A1t-%C4%91%E1%BB%99ng-trong-C++-(-ph%E1%BA%A7n-1-).html" data-numposts="5"></div>
+<div class="fb-comments" data-href="https://tapnhamblog.github.io/2018/06/03/Con-tr%E1%BB%8F-v%C3%A0-C%E1%BA%A5p-ph%C3%A1t-%C4%91%E1%BB%99ng-trong-C++-(-ph%E1%BA%A7n-1-).html" data-numposts="5"></div>

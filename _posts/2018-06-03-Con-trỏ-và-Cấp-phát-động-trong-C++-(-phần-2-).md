@@ -6,9 +6,9 @@
   });
 </script>
 
-Link phần 3: [Con trỏ và cấp phát động trong C/C++](https://huaanhminh.github.io/2018/06/03/Con-tr%E1%BB%8F-v%C3%A0-C%E1%BA%A5p-ph%C3%A1t-%C4%91%E1%BB%99ng-trong-C++-(-ph%E1%BA%A7n-3-).html)
+Link phần 3: [Con trỏ và cấp phát động trong C/C++](https://tapnhamblog.github.io/2018/06/03/Con-tr%E1%BB%8F-v%C3%A0-C%E1%BA%A5p-ph%C3%A1t-%C4%91%E1%BB%99ng-trong-C++-(-ph%E1%BA%A7n-3-).html)
 
-Ở [phần trước](https://huaanhminh.github.io/2018/06/03/Con-tr%E1%BB%8F-v%C3%A0-C%E1%BA%A5p-ph%C3%A1t-%C4%91%E1%BB%99ng-trong-C++-(-ph%E1%BA%A7n-1-).html), mình đã giới thiệu về khái niệm về con trỏ và một số thao tác cơ bản. trong phần này, mình sẽ hướng dẫn thao tác trên mảng bằng con trỏ bằng cách sử dụng toán tử và cấu trúc struct sử dụng con trỏ.
+Ở [phần trước](https://tapnhamblog.github.io/2018/06/03/Con-tr%E1%BB%8F-v%C3%A0-C%E1%BA%A5p-ph%C3%A1t-%C4%91%E1%BB%99ng-trong-C++-(-ph%E1%BA%A7n-1-).html), mình đã giới thiệu về khái niệm về con trỏ và một số thao tác cơ bản. trong phần này, mình sẽ hướng dẫn thao tác trên mảng bằng con trỏ bằng cách sử dụng toán tử và cấu trúc struct sử dụng con trỏ.
 
 # TOÁN TỬ TRÊN CON TRỎ
 
@@ -257,6 +257,6 @@ Tóm lại, ở phần 2 này, mình đã giới thiệu về toán tử trên c
 }(document, 'script', 'facebook-jssdk'));</script>
 
 
-<div class="fb-like" data-href="https://huaanhminh.github.io/2018/06/03/Con-tr%E1%BB%8F-v%C3%A0-C%E1%BA%A5p-ph%C3%A1t-%C4%91%E1%BB%99ng-trong-C++-(-ph%E1%BA%A7n-2-).html" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+<div class="fb-like" data-href="https://tapnhamblog.github.io/2018/06/03/Con-tr%E1%BB%8F-v%C3%A0-C%E1%BA%A5p-ph%C3%A1t-%C4%91%E1%BB%99ng-trong-C++-(-ph%E1%BA%A7n-2-).html" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 
-<div class="fb-comments" data-href="https://huaanhminh.github.io/2018/06/03/Con-tr%E1%BB%8F-v%C3%A0-C%E1%BA%A5p-ph%C3%A1t-%C4%91%E1%BB%99ng-trong-C++-(-ph%E1%BA%A7n-2-).html" data-numposts="5"></div>
+<div class="fb-comments" data-href="https://tapnhamblog.github.io/2018/06/03/Con-tr%E1%BB%8F-v%C3%A0-C%E1%BA%A5p-ph%C3%A1t-%C4%91%E1%BB%99ng-trong-C++-(-ph%E1%BA%A7n-2-).html" data-numposts="5"></div>

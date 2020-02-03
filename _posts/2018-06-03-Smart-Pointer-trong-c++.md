@@ -6,7 +6,7 @@
   });
 </script>
 
-<link rel="icon" type="image/png" href="http://huaanhminh.github.io/_img/HuaAnhMinh.ico">
+<link rel="icon" type="image/png" href="https://tapnhamblog.github.io/_img/HuaAnhMinh.ico">
 
 Đặt vấn đề: có phải từ trước đến giờ khi cấp phát bộ nhớ động trong C++ thì bạn vẫn hay dùng một trong 2 cách sau:
 
@@ -153,6 +153,6 @@ int main() {
 }(document, 'script', 'facebook-jssdk'));</script>
 
 
-<div class="fb-like" data-href="https://huaanhminh.github.io/2018/06/03/Smart-Pointer-trong-c++.html" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+<div class="fb-like" data-href="https://tapnhamblog.github.io/2018/06/03/Smart-Pointer-trong-c++.html" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 
-<div class="fb-comments" data-href="https://huaanhminh.github.io/2018/06/03/Smart-Pointer-trong-c++.html" data-numposts="5"></div>
+<div class="fb-comments" data-href="https://tapnhamblog.github.io/2018/06/03/Smart-Pointer-trong-c++.html" data-numposts="5"></div>

@@ -2,7 +2,7 @@ Hôm nay để đổi gió một chút thì mình sẽ viết một bài về tr
 
 ## Big-O Coding là gì?
 
-Big-O Coding là một start-up mới thành lập khoảng 1 năm chuyên về đào tạo thuật toán. Các bạn có thể xem qua về trung tâm ở đây: [http://bigocoding.com/](http://bigocoding.com/). Hiện nay trung tâm có 2 khóa đào tạo là Green (dành cho những người chưa biết về thuật toán) và khóa Blue (dành cho những bạn đã xong kiến thức khóa Green), chi tiết thì các bạn xem ở link trên nếu các bạn muốn tìm hiểu thêm.
+Big-O Coding là một start-up mới thành lập khoảng 1 năm chuyên về đào tạo thuật toán. Các bạn có thể xem qua về trung tâm ở đây: [https://bigocoding.com/](https://bigocoding.com/). Hiện nay trung tâm có 2 khóa đào tạo là Green (dành cho những người chưa biết về thuật toán) và khóa Blue (dành cho những bạn đã xong kiến thức khóa Green), chi tiết thì các bạn xem ở link trên nếu các bạn muốn tìm hiểu thêm.
 
 ## Ngày đầu như thế nào?
 
@@ -72,6 +72,6 @@ Sau đó thì mình đi ăn trưa các kiểu rồi chiều đến thì ngồi t
 }(document, 'script', 'facebook-jssdk'));</script>
 
 
-<div class="fb-like" data-href="https://huaanhminh.github.io/2018/06/07/Tr%E1%BA%A3i-nghi%E1%BB%87m-ng%C3%A0y-%C4%91%E1%BA%A7u-th%E1%BB%B1c-t%E1%BA%ADp-%E1%BB%9F-Big-O-Coding.html" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+<div class="fb-like" data-href="https://tapnhamblog.github.io/2018/06/07/Tr%E1%BA%A3i-nghi%E1%BB%87m-ng%C3%A0y-%C4%91%E1%BA%A7u-th%E1%BB%B1c-t%E1%BA%ADp-%E1%BB%9F-Big-O-Coding.html" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 
-<div class="fb-comments" data-href="https://huaanhminh.github.io/2018/06/07/Tr%E1%BA%A3i-nghi%E1%BB%87m-ng%C3%A0y-%C4%91%E1%BA%A7u-th%E1%BB%B1c-t%E1%BA%ADp-%E1%BB%9F-Big-O-Coding.html" data-numposts="5"></div>
+<div class="fb-comments" data-href="https://tapnhamblog.github.io/2018/06/07/Tr%E1%BA%A3i-nghi%E1%BB%87m-ng%C3%A0y-%C4%91%E1%BA%A7u-th%E1%BB%B1c-t%E1%BA%ADp-%E1%BB%9F-Big-O-Coding.html" data-numposts="5"></div>

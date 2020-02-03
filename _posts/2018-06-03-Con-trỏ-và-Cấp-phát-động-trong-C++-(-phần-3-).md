@@ -6,7 +6,7 @@
   });
 </script>
 
-Ở [phần trước](https://huaanhminh.github.io/2018/06/03/Con-tr%E1%BB%8F-v%C3%A0-C%E1%BA%A5p-ph%C3%A1t-%C4%91%E1%BB%99ng-trong-C++-(-ph%E1%BA%A7n-2-).html) mình đã giới thiệu qua cách sử dụng toán tử đối với con trỏ và thao tác trên mảng bằng con trỏ. Trong phần này mình sẽ giới thiệu qua về kĩ thuật cấp phát động ở mức cơ bản nhất.
+Ở [phần trước](https://tapnhamblog.github.io/2018/06/03/Con-tr%E1%BB%8F-v%C3%A0-C%E1%BA%A5p-ph%C3%A1t-%C4%91%E1%BB%99ng-trong-C++-(-ph%E1%BA%A7n-2-).html) mình đã giới thiệu qua cách sử dụng toán tử đối với con trỏ và thao tác trên mảng bằng con trỏ. Trong phần này mình sẽ giới thiệu qua về kĩ thuật cấp phát động ở mức cơ bản nhất.
 
 # CẤP PHÁT TĨNH - STATIC MEMORY ALLOCATION
 
@@ -38,7 +38,7 @@ Vậy nếu mình nhập vào quá 100 phần tử thì sẽ bị lỗi vì mả
 
 # THÁP VÙNG NHỚ
 
-![Level of memory](http://huaanhminh.github.io/_img/Dynamic_memory_level_of_memory.png)
+![Level of memory](https://tapnhamblog.github.io/_img/Dynamic_memory_level_of_memory.png)
 
 Công dụng lần lượt của các phân vùng:
 
@@ -262,6 +262,6 @@ Vậy là sau một hồi đọc cái bài dài miên man này, ta đã biết �
 }(document, 'script', 'facebook-jssdk'));</script>
 
 
-<div class="fb-like" data-href="https://huaanhminh.github.io/2018/06/03/Con-tr%E1%BB%8F-v%C3%A0-C%E1%BA%A5p-ph%C3%A1t-%C4%91%E1%BB%99ng-trong-C++-(-ph%E1%BA%A7n-3-).html" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+<div class="fb-like" data-href="https://tapnhamblog.github.io/2018/06/03/Con-tr%E1%BB%8F-v%C3%A0-C%E1%BA%A5p-ph%C3%A1t-%C4%91%E1%BB%99ng-trong-C++-(-ph%E1%BA%A7n-3-).html" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 
-<div class="fb-comments" data-href="https://huaanhminh.github.io/2018/06/03/Con-tr%E1%BB%8F-v%C3%A0-C%E1%BA%A5p-ph%C3%A1t-%C4%91%E1%BB%99ng-trong-C++-(-ph%E1%BA%A7n-3-).html" data-numposts="5"></div>
+<div class="fb-comments" data-href="https://tapnhamblog.github.io/2018/06/03/Con-tr%E1%BB%8F-v%C3%A0-C%E1%BA%A5p-ph%C3%A1t-%C4%91%E1%BB%99ng-trong-C++-(-ph%E1%BA%A7n-3-).html" data-numposts="5"></div>

@@ -19,7 +19,7 @@ Debug bằng vịt cao su - Rubber Duck Debuggin là một phương pháp debug 
 * Giúp bạn hiểu rõ vấn đề hơn: khi đọc một đoạn code xong, có thể các bạn nghĩ là đã hiểu về đoạn code đó rồi; nhưng thật ra chưa chắc đâu, chỉ khi nào các bạn có thể tự bản thân giải thích lại đoạn code đó một cách rõ ràng theo cách bạn hiểu thì mới được. Các bạn có thể thực hiện phương pháp giải thích code với một người bạn nào đó, nhưng vấn đề là không phải lúc nào mọi người cũng rảnh mà nghe bạn giải thích nên việc dùng một vật tượng trưng như con vịt sẽ hợp lý hơn.
 * Giúp bạn xả stress: khi làm project thì thường các bạn sẽ làm nhóm với nhau, và không phải lúc nào các đồng đội của bạn cũng có khả năng code đúng hoàn toàn 100% vì họ cũng chỉ là người, code sai là chuyện chắc chắn sẽ xảy ra. Khi review code chéo lẫn nhau, các bạn có thể sẽ thấy không vui và bực bội khi đồng đội code sai code xấu các kiểu, và những lúc đó nếu có một con vịt để có thể trút giận lên nó sẽ tốt hơn là so với việc trút giận lên đầu người đồng đội kia, tránh việc mất đoàn kết trong team; và đặt trường hợp bạn là người code sai thì bạn cũng đâu muốn bị đồng đội trút giận lên đầu phải không, do đó nên có vịt để ta có thể trút giận vào và khi nguôi giận thì ta sẽ dùng lời lẽ hợp lí để giải thích code cho người đồng đội kia.
 
-![Rubber Duck Debugging](http://huaanhminh.github.io/_img/RubberDuckDebugging.png)
+![Rubber Duck Debugging](https://tapnhamblog.github.io/_img/RubberDuckDebugging.png)
 
 Trên thực tế, trang web nổi tiếng đó là [Stack Exchange](https://stackexchange.com/) cũng đã từng giới thiệu một tính năng trên web họ đó là Quack Overflow. Khi sử dụng tính năng này, người dùng sẽ được chat với một con vịt, đúng vậy, một con vịt và con vịt đó sẽ phản hồi lại những vấn đề của ta và đưa ra gợi ý giải quyết.
 
@@ -34,6 +34,6 @@ Nói tóm lại, mỗi lập trình viên nên mang theo cho mình một con v�
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-<div class="fb-like" data-href="https://huaanhminh.github.io/2018/06/26/Debug-b%E1%BA%B1ng-v%E1%BB%8Bt-cao-su.html" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+<div class="fb-like" data-href="https://tapnhamblog.github.io/2018/06/26/Debug-b%E1%BA%B1ng-v%E1%BB%8Bt-cao-su.html" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 
-<div class="fb-comments" data-href="https://huaanhminh.github.io/2018/06/26/Debug-b%E1%BA%B1ng-v%E1%BB%8Bt-cao-su.html" data-numposts="5"></div>
+<div class="fb-comments" data-href="https://tapnhamblog.github.io/2018/06/26/Debug-b%E1%BA%B1ng-v%E1%BB%8Bt-cao-su.html" data-numposts="5"></div>

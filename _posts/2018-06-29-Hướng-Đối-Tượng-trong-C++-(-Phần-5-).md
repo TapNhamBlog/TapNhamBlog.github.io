@@ -10,7 +10,7 @@
 
 <i>Đây là một khái niệm khá trừu tượng và khó hiểu nên bài viết này sẽ hơi dài...</i>
 
-Link phần 4: [Inheritance trong C++](https://huaanhminh.github.io/2018/06/03/H%C6%B0%E1%BB%9Bng-%C4%90%E1%BB%91i-T%C6%B0%E1%BB%A3ng-trong-C++-(-Ph%E1%BA%A7n-4-).html)
+Link phần 4: [Inheritance trong C++](https://tapnhamblog.github.io/2018/06/03/H%C6%B0%E1%BB%9Bng-%C4%90%E1%BB%91i-T%C6%B0%E1%BB%A3ng-trong-C++-(-Ph%E1%BA%A7n-4-).html)
 
 ## Quan hệ IS-A và HAS-A
 
@@ -18,7 +18,7 @@ Trong phần trước mình đã có giới thiệu qua về quan hệ IS-A đư
 
 Thế còn quan hệ HAS-A thì sao? Đơn giản thôi, ta có quan hệ HAS-A khi trong `class A` có chứa thành phần kiểu `class B`. Ví dụ: ta có `class Student` và `class School`, trong `class School` có chứa mảng với kiểu `class Student` (giống như <b>trường học</b> thì <b>chứa</b> <b>học sinh</b>) nên ta gọi đây là quan hệ HAS-A. Ví dụ khác: ta có `class Point` và `class Triangle`; trong `class Triangle` thì <b>chứa</b> 3 điểm (3 thuộc tính) kiểu `class Point` nên đây cũng là quan hệ HAS-A.
 
-![Example of HAS-A relationship](http://huaanhminh.github.io/_img/HAS-A_Example.png)
+![Example of HAS-A relationship](https://tapnhamblog.github.io/_img/HAS-A_Example.png)
 
 ```cpp
 class Point {
@@ -321,6 +321,6 @@ public:
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-<div class="fb-like" data-href="https://huaanhminh.github.io/2018/06/29/H%C6%B0%E1%BB%9Bng-%C4%90%E1%BB%91i-T%C6%B0%E1%BB%A3ng-trong-C++-(-Ph%E1%BA%A7n-5-).html" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+<div class="fb-like" data-href="https://tapnhamblog.github.io/2018/06/29/H%C6%B0%E1%BB%9Bng-%C4%90%E1%BB%91i-T%C6%B0%E1%BB%A3ng-trong-C++-(-Ph%E1%BA%A7n-5-).html" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 
-<div class="fb-comments" data-href="https://huaanhminh.github.io/2018/06/29/H%C6%B0%E1%BB%9Bng-%C4%90%E1%BB%91i-T%C6%B0%E1%BB%A3ng-trong-C++-(-Ph%E1%BA%A7n-5-).html" data-numposts="5"></div>
+<div class="fb-comments" data-href="https://tapnhamblog.github.io/2018/06/29/H%C6%B0%E1%BB%9Bng-%C4%90%E1%BB%91i-T%C6%B0%E1%BB%A3ng-trong-C++-(-Ph%E1%BA%A7n-5-).html" data-numposts="5"></div>

@@ -6,7 +6,7 @@
   });
 </script>
 
-Ở bài viết trước ([Tính đa hình trong C/C++](https://huaanhminh.github.io/2018/06/29/H%C6%B0%E1%BB%9Bng-%C4%90%E1%BB%91i-T%C6%B0%E1%BB%A3ng-trong-C++-(-Ph%E1%BA%A7n-5-).html)), mình đã giới thiệu xong 4 nguyên lý cơ bản nhất về hướng đối tượng mà ai học về nó cũng phải biết:
+Ở bài viết trước ([Tính đa hình trong C/C++](https://tapnhamblog.github.io/2018/06/29/H%C6%B0%E1%BB%9Bng-%C4%90%E1%BB%91i-T%C6%B0%E1%BB%A3ng-trong-C++-(-Ph%E1%BA%A7n-5-).html)), mình đã giới thiệu xong 4 nguyên lý cơ bản nhất về hướng đối tượng mà ai học về nó cũng phải biết:
   * Tính đóng gói (Encapsulation).
   * Tính kế thừa (Inheritance).
   * Tính trừu tượng (Abstraction).
@@ -262,6 +262,6 @@ Còn tiếp...
 }(document, 'script', 'facebook-jssdk'));</script>
 
 
-<div class="fb-like" data-href="https://huaanhminh.github.io/2018/07/05/M%E1%BB%99t-S%E1%BB%91-K%E1%BB%B9-Thu%E1%BA%ADt-C%C6%A1-B%E1%BA%A3n-Trong-H%C6%B0%E1%BB%9Bng-%C4%90%E1%BB%91i-T%C6%B0%E1%BB%A3ng.html" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+<div class="fb-like" data-href="https://tapnhamblog.github.io/2018/07/05/M%E1%BB%99t-S%E1%BB%91-K%E1%BB%B9-Thu%E1%BA%ADt-C%C6%A1-B%E1%BA%A3n-Trong-H%C6%B0%E1%BB%9Bng-%C4%90%E1%BB%91i-T%C6%B0%E1%BB%A3ng.html" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 
-<div class="fb-comments" data-href="https://huaanhminh.github.io/2018/07/05/M%E1%BB%99t-S%E1%BB%91-K%E1%BB%B9-Thu%E1%BA%ADt-C%C6%A1-B%E1%BA%A3n-Trong-H%C6%B0%E1%BB%9Bng-%C4%90%E1%BB%91i-T%C6%B0%E1%BB%A3ng.html" data-numposts="5"></div>
+<div class="fb-comments" data-href="https://tapnhamblog.github.io/2018/07/05/M%E1%BB%99t-S%E1%BB%91-K%E1%BB%B9-Thu%E1%BA%ADt-C%C6%A1-B%E1%BA%A3n-Trong-H%C6%B0%E1%BB%9Bng-%C4%90%E1%BB%91i-T%C6%B0%E1%BB%A3ng.html" data-numposts="5"></div>

@@ -223,6 +223,6 @@ int main() {
 }(document, 'script', 'facebook-jssdk'));</script>
 
 
-<div class="fb-like" data-href="https://huaanhminh.github.io/2018/06/03/Chuy%E1%BB%83n-%C4%91%E1%BB%8Bnh-d%E1%BA%A1ng-k%E1%BA%BFt-th%C3%BAc-d%C3%B2ng-trong-file-gi%E1%BB%AFa-c%C3%A1c-h%E1%BB%87-%C4%91i%E1%BB%81u-h%C3%A0nh.html" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+<div class="fb-like" data-href="https://tapnhamblog.github.io/2018/06/03/Chuy%E1%BB%83n-%C4%91%E1%BB%8Bnh-d%E1%BA%A1ng-k%E1%BA%BFt-th%C3%BAc-d%C3%B2ng-trong-file-gi%E1%BB%AFa-c%C3%A1c-h%E1%BB%87-%C4%91i%E1%BB%81u-h%C3%A0nh.html" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 
-<div class="fb-comments" data-href="https://huaanhminh.github.io/2018/06/03/Chuy%E1%BB%83n-%C4%91%E1%BB%8Bnh-d%E1%BA%A1ng-k%E1%BA%BFt-th%C3%BAc-d%C3%B2ng-trong-file-gi%E1%BB%AFa-c%C3%A1c-h%E1%BB%87-%C4%91i%E1%BB%81u-h%C3%A0nh.html" data-numposts="5"></div>
+<div class="fb-comments" data-href="https://tapnhamblog.github.io/2018/06/03/Chuy%E1%BB%83n-%C4%91%E1%BB%8Bnh-d%E1%BA%A1ng-k%E1%BA%BFt-th%C3%BAc-d%C3%B2ng-trong-file-gi%E1%BB%AFa-c%C3%A1c-h%E1%BB%87-%C4%91i%E1%BB%81u-h%C3%A0nh.html" data-numposts="5"></div>

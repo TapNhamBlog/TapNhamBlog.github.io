@@ -305,6 +305,6 @@ Trong bài này ta đã biết được:
 }(document, 'script', 'facebook-jssdk'));</script>
 
 
-<div class="fb-like" data-href="https://huaanhminh.github.io/2018/09/07/Con-Tr%E1%BB%8F-H%C3%A0m-(Function-Pointer),-H%C3%A0m-G%E1%BB%8Di-L%E1%BA%A1i-(Callback-Function)-V%C3%A0-Nh%E1%BB%AFng-%E1%BB%A8ng-D%E1%BB%A5ng-Trong-%C4%90a-Lu%E1%BB%93ng.html" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+<div class="fb-like" data-href="https://tapnhamblog.github.io/2018/09/07/Con-Tr%E1%BB%8F-H%C3%A0m-(Function-Pointer),-H%C3%A0m-G%E1%BB%8Di-L%E1%BA%A1i-(Callback-Function)-V%C3%A0-Nh%E1%BB%AFng-%E1%BB%A8ng-D%E1%BB%A5ng-Trong-%C4%90a-Lu%E1%BB%93ng.html" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 
-<div class="fb-comments" data-href="https://huaanhminh.github.io/2018/09/07/Con-Tr%E1%BB%8F-H%C3%A0m-(Function-Pointer),-H%C3%A0m-G%E1%BB%8Di-L%E1%BA%A1i-(Callback-Function)-V%C3%A0-Nh%E1%BB%AFng-%E1%BB%A8ng-D%E1%BB%A5ng-Trong-%C4%90a-Lu%E1%BB%93ng.html" data-numposts="5"></div>
+<div class="fb-comments" data-href="https://tapnhamblog.github.io/2018/09/07/Con-Tr%E1%BB%8F-H%C3%A0m-(Function-Pointer),-H%C3%A0m-G%E1%BB%8Di-L%E1%BA%A1i-(Callback-Function)-V%C3%A0-Nh%E1%BB%AFng-%E1%BB%A8ng-D%E1%BB%A5ng-Trong-%C4%90a-Lu%E1%BB%93ng.html" data-numposts="5"></div>

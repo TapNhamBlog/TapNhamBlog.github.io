@@ -8,7 +8,7 @@
 
 # NHỮNG NGUYÊN LÝ CƠ BẢN CỦA LẬP TRÌNH HƯỚNG ĐỐI TƯỢNG
 
-Link phần 2: [Constructor và Destructor trong C++](https://huaanhminh.github.io/2018/06/03/H%C6%B0%E1%BB%9Bng-%C4%90%E1%BB%91i-T%C6%B0%E1%BB%A3ng-trong-C++-(-ph%E1%BA%A7n-2-).html)
+Link phần 2: [Constructor và Destructor trong C++](https://tapnhamblog.github.io/2018/06/03/H%C6%B0%E1%BB%9Bng-%C4%90%E1%BB%91i-T%C6%B0%E1%BB%A3ng-trong-C++-(-ph%E1%BA%A7n-2-).html)
 
 ## Khái niệm cơ bản
 
@@ -25,7 +25,7 @@ Hướng đối tượng là một mẫu hình thiết kế source code thông d
 ### Sơ đồ UML - Unified Modeling Language
 UML là ngôn ngữ giúp ta mô hình hóa cách bố trí source code của ta trong dự án, giúp cho ta có cái nhìn toàn diện và bao quát về các khía cạnh trong dự án, ví dụ như hình sau:
 
-![Example of UML](http://huaanhminh.github.io/_img/UML_example.png)
+![Example of UML](https://tapnhamblog.github.io/_img/UML_example.png)
 
 ## Thế lập trình hướng đối tượng là như thế nào?
 
@@ -106,7 +106,7 @@ Ta sẽ lấy ví dụ class `Rectangle` trên để thực hành.
     ```
     Ở đây, `private` có nghĩa là riêng tư, khi ta khai báo một thuộc tính với phạm vi `private` thì thuộc tính đó không thể nhìn thấy từ bên ngoài được, như hình sau:
     
-    ![Error access to private member](http://huaanhminh.github.io/_img/error_access_to_private_member.PNG)
+    ![Error access to private member](https://tapnhamblog.github.io/_img/error_access_to_private_member.PNG)
 
     Và tất nhiên, trái ngược với `private` là `public`, khi khai báo `public` thì ta có thể dễ dàng truy cập vào những gì đã được `public` từ bên ngoài class.
 3. Nếu ta muốn lấy giá trị của chiều dài hay thay đổi giá trị chiều dài mà ta đã ẩn nó đi thì phải làm sao? Thông qua 2 phương thức getter và setter:
@@ -160,6 +160,6 @@ Ta sẽ lấy ví dụ class `Rectangle` trên để thực hành.
 }(document, 'script', 'facebook-jssdk'));</script>
 
 
-<div class="fb-like" data-href="https://huaanhminh.github.io/2018/06/03/H%C6%B0%E1%BB%9Bng-%C4%90%E1%BB%91i-T%C6%B0%E1%BB%A3ng-trong-C++-(-ph%E1%BA%A7n-1-).html" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+<div class="fb-like" data-href="https://tapnhamblog.github.io/2018/06/03/H%C6%B0%E1%BB%9Bng-%C4%90%E1%BB%91i-T%C6%B0%E1%BB%A3ng-trong-C++-(-ph%E1%BA%A7n-1-).html" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 
-<div class="fb-comments" data-href="https://huaanhminh.github.io/2018/06/03/H%C6%B0%E1%BB%9Bng-%C4%90%E1%BB%91i-T%C6%B0%E1%BB%A3ng-trong-C++-(-ph%E1%BA%A7n-1-).html" data-numposts="5"></div>
+<div class="fb-comments" data-href="https://tapnhamblog.github.io/2018/06/03/H%C6%B0%E1%BB%9Bng-%C4%90%E1%BB%91i-T%C6%B0%E1%BB%A3ng-trong-C++-(-ph%E1%BA%A7n-1-).html" data-numposts="5"></div>
