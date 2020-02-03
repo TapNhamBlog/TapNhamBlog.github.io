@@ -23,18 +23,34 @@ Kĩ thuật này được áp dụng đối với các biến cục bộ hoặc 
 * Sau khi ra khỏi khối lệnh chứa biến đó thì vùng nhớ được tự động thu hồi.
 * Tương tự như cấp phát tĩnh, ta không thể tùy ý thay đổi kích thước trong quá trình chạy.
 
+> Thông thường người ta sẽ gộp chung 2 kiểu trên thành tên gọi chung là cấp phát tĩnh cho đơn giản, nhưng để chi tiết thì mình sẽ giữ nguyên cách gọi chuẩn cho cả 2.
+
+Ví dụ cho 2 kiểu cấp phát trên:
+
+```cpp
+int a = 1; // do biến a là biến toàn cục nên là dạng cấp phát tĩnh nên khi vừa chạy chương trình thì biến a đã được cấp phát.
+
+int main() {
+    int b = 2; // do biến b là biến cục bộ nên chỉ khi chương trình chạy qua dòng khai báo biến b thì biến b mới được cấp phát.
+}
+```
+
 ⇒ Nhược điểm của 2 kiểu cấp phát trên:
 
 * Kích thước vùng nhớ khi được cấp phát tại thời điểm biên dịch phải cố định (là hằng số), ví dụ nếu mình muốn khai báo một mảng số nguyên như sau:
 
 ```cpp
 int arr[100];
+
+// hoặc
+const int MAX_SIZE = 100;
+int arr2[MAX_SIZE];
 ```
 
-Vậy nếu mình nhập vào quá 100 phần tử thì sẽ bị lỗi vì mảng không thể chứa quá 100 phần tử; còn nếu mình nhập chỉ 1 phần tử thì chả phải thừa 99 phần còn lại không dược dùng.
+Vậy nếu mình nhập vào quá 100 phần tử thì sẽ bị lỗi vì mảng không thể chứa quá 100 phần tử; còn nếu mình nhập chỉ 1 phần tử thì lại thừa 99 phần còn lại không dược dùng và sẽ gây lãng phí.
 
 * Với 2 cách thức cấp phát trên thì việc cấp phát và thu hồi vùng nhớ hoàn toàn do chương trình quyết định và ta không thể can thiệp vào như thay đổi mảng 100 phần tử trên thành 200 hay 300,… Hơn nữa, như các bạn đều biết thì biến toàn cục tồn tại mọi nơi trong chương trình từ lúc khai báo đến khi chương trình kết thúc, tức là vùng nhớ cho biến toàn cục có thời gian tồn tại lâu nên khi sử dụng nhiều biến toàn cục sẽ gây lãng phí bộ nhớ rất nhiều.
-* Kích thước cho vùng nhớ rất nhỏ…
+* Kích thước cho vùng nhớ rất nhỏ.
 
 # THÁP VÙNG NHỚ
 
@@ -44,18 +60,18 @@ Công dụng lần lượt của các phân vùng:
 
 * Text: hay còn gọi là text segment hoặc code segment, là nơi lưu trữ các mã lệnh đã được biên dịch của chương trình. Những mã lệnh này sẽ được chuyển tới CPU để xử lí khi cần thiết. Code segment chịu sự chi phối 100% của hệ điều hành, khi ta chạy chương trình thì hệ điều hành sẽ đưa các mã lệnh đã được biên dịch lên code segment đầu tiên.
 * Data (initialized data segment): hay GVAR (Global VARiable) là phân vùng mà hệ điều hành sử dụng để khởi tạo giá trị cho các kiểu biến toàn cục (global variable), biến toàn cục chỉ có giá trị nội tại trong file chứa nó (static).
-* .BSS (uninitialized data segment): cũng được dùng để chứa các biến toàn cục global và static nhưng các biến này chưa được khởi tạo giá trị cụ thể. Ví dụ int a; //giá trị rác.
+* .BSS (uninitialized data segment): cũng được dùng để chứa các biến toàn cục global và static nhưng các biến này chưa được khởi tạo giá trị cụ thể. Ví dụ int a; // giá trị rác.
 * Heap segment (free store segment): được sử dụng để cấp phát bộ nhớ thông qua kĩ thuật Dynamic Memory Allocation. Người dùng có thể hoàn toàn kiểm soát bộ nhớ Heap trong quá trình làm việc, và đặc biệt là dung lượng bộ nhớ nó rất lớn, có thể lên đến hàng GB.
 * Stack segment (thường gọi tắt là stack): là bộ nhớ được cấp phát cho các tham số của hàm, và các biến cục bộ (local variable). Bộ nhớ này được thực hiện theo quy tắc ngăn xếp (stack – Last In First Out), bộ nhớ này không hoàn toàn thuộc sự kiểm soát của người dùng và dung lượng của nó cũng rất ít, đó hạn chế của việc cấp phát tĩnh.
-* Vùng nhớ Unused: vùng nhớ này nằm giữa 2 vùng nhớ stack và heap. Khi bộ nhớ stack hoặc heap đã hết, nếu có chỉ thị cấp phát từ người dùng thì bộ nhớ stack hoặc heap sẽ mở rộng vào vùng nhớ này; vùng nhớ này thực chất là ảo, nó chỉ là ảnh giống như là bộ nhớ ảo vậy.
+* Vùng nhớ Unused: vùng nhớ này nằm giữa 2 vùng nhớ stack và heap. Khi bộ nhớ stack hoặc heap đã hết, nếu có chỉ thị cấp phát từ người dùng thì bộ nhớ stack hoặc heap sẽ mở rộng vào vùng nhớ này; vùng nhớ này thực chất là ảo, nó chỉ là ảnh giống như là bộ nhớ ảo vậy. Tuy nhiên trên thực tế thì vùng nhớ stack do hệ điều hành quản lý và do đó hệ điều hành cũng cung cấp dung lượng cho vùng nhớ stack khá ít so với heap thì rất nhiều.
 
 # CẤP PHÁT ĐỘNG - DYNAMIC MEMORY ALLOCATION
 
-Kĩ thuật cấp phát động dùng để cấp phát một vùng nhớ ở HEAP tại thời điểm run-time hay còn gọi là thời điểm chương trình đang thực thi. Cần phải lưu ý rằng kĩ thuật này dùng để cấp phát 1 vùng nhớ mới chứ không phải tạo ra 1 tên biến mới, và chúng ta kiểm soát vùng nhớ này thông qua biến con trỏ trỏ tới địa chỉ đầu tiên của vùng nhớ.
+Kĩ thuật cấp phát động dùng để cấp phát một vùng nhớ ở HEAP tại thời điểm run-time hay còn gọi là thời điểm chương trình đang thực thi. Cần phải lưu ý rằng kĩ thuật này dùng để cấp phát 1 vùng nhớ mới chứ không phải tạo ra 1 tên biến mới, và chúng ta kiểm soát vùng nhớ này thông qua biến con trỏ trỏ tới địa chỉ tại ô nhớ đầu tiên của vùng nhớ.
 
 ## Cấp phát vùng nhớ là biến đơn lẻ (dynamically allocate single variable)
 
-Cú pháp cấp phát của của C và C++ có sự khác nhau khá lớn, tùy thuộc vào mỗi người mà chọn nên theo C hay C++.
+Cú pháp cấp phát của của C và C++ có sự khác nhau khá lớn, tùy thuộc vào mỗi người mà chọn nên theo C hay C++. Cá nhân mình thì thích cách của C++ hơn do đơn giản hơn và có phần đỡ nguy hiểm hơn C và có vẻ hầu hết hiện nay các trường đều dùng cách C++ để dạy. Nhưng thực tế để nắm vững và thông thạo về con trỏ cũng như hình dung cách tổ chức bộ nhớ của con trỏ thì cách của C vẫn là cách chuẩn hơn.
 
 ### Cú pháp của C: ta dùng hàm `malloc` –  memory allocate:
 
@@ -63,10 +79,14 @@ Cú pháp cấp phát của của C và C++ có sự khác nhau khá lớn, tùy
 // <kiểu dữ liệu của vùng nhớ> *<tên biến con trỏ> = (kiểu dữ liệu của vùng nhớ*)malloc(sizeof(kiểu dữ liệu của vùng nhớ));
 
 //Ví dụ:
-int *so_nguyen = (int*)malloc(sizeof(int)); //vùng nhớ 4 bytes kiểu int
-double *so_thuc = (double*)malloc(sizeof(double)); //8 bytes kiểu double
-char *ki_tu = (char*)malloc(sizeof(char)); //1 byte kiểu char
+int *so_nguyen = (int*)malloc(sizeof(int)); // vùng nhớ 4 bytes kiểu int
+double *so_thuc = (double*)malloc(sizeof(double)); // 8 bytes kiểu double
+char *ki_tu = (char*)malloc(sizeof(char)); // 1 byte kiểu char
 ```
+
+Một số bạn chắc sẽ hơi hoảng một chút ở chỗ này. Để mình giải thích vì sao phải có `(int*)` hay là `(double*)` ở đầu: hàm `malloc` không trả về kiểu dữ liệu đúng như ta mong muốn mà thay vào đó `malloc` sẽ trả về kiểu `void*` là con trỏ rỗng không có bất kỳ kiểu nào. Các bạn có thể sẽ khá thắc mắc nhưng thực tế là hợp lý vì hãy thử nghĩ xem: làm sao mà hàm `malloc` biết được chúng ta đang muốn trả ra kiểu dữ liệu nào, `malloc` làm sao biết được ta muốn `int*` hay `double*` hay `char*`. Do đó cách tốt nhất nó sẽ trả ra con trỏ rỗng `void*`, và đặc điểm con trỏ này là nó có thể được ép kiểu sang bất kỳ loại con trỏ nào. Đó là lí do mình thêm `(int*)` vào trước `malloc` là để ép sang con trỏ `int*` và tương tự `(double*)` cho con trỏ kiểu `double*`.
+
+Mình thường hay gọi `void*` như là con trỏ nguyên thuỷ, có thể tuỳ biến thành bất kỳ kiểu con trỏ nào khác (với điều kiện cùng kích thước, như `void*` trỏ tới vùng nhớ 4 byte thì có thể ép sang `int*` hay `float*` do 2 con trỏ đó đều trỏ tới vùng nhớ 4 byte.) cũng như từ bất kỳ kiểu con trỏ nào khác cũng có thể đổi về `void*`.
 
 Cách dùng thì dùng như một biến con trỏ thông thường:
 
@@ -75,17 +95,17 @@ int *so_nguyen = (int*)malloc(sizeof(int));
 *so_nguyen = 10; //lưu trữ 10 ở vùng nhớ mà biến so_nguyen trỏ đến
 ```
 
-Thu hồi vùng nhớ: đây là một vấn đề rất rất rất quan trọng trong cấp phát động. Đúng là vùng nhớ heap có dung lượng khá lớn, nhưng nó cũng có giới hạn, nên nếu bạn cứ vô tổ chức, vô kỉ luật, vô tội vạ cấp phát vùng nhớ liên tục mà không thu hồi lại sau khi sử dụng xong thì một lúc nào đó sẽ cạn dung lượng và gây ra tình trạng rò rỉ bộ nhớ (memory leak). Trong những hệ thống lớn, chương trình được chạy và các vùng nhớ được cấp phát liên tục nên nếu các lập trình viên không giải phóng vùng nhớ mỗi khi sử dụng xong thì việc cấp phát liên tục trong hệ thống sẽ khiến bộ nhớ bị cạn kiệt.
+Trước khi chuyển sang cách cấp phát của C++ thì mình muốn đề cập vấn đề về thu hồi vùng nhớ đã cấp phát: đây là một vấn đề rất rất rất quan trọng trong cấp phát động. Đúng là vùng nhớ heap có dung lượng khá lớn, nhưng nó cũng có giới hạn nhất định và do đó nếu bạn cứ vô tổ chức, vô kỉ luật, vô tội vạ cấp phát vùng nhớ liên tục mà không thu hồi lại sau khi sử dụng xong thì một lúc nào đó sẽ cạn dung lượng và gây ra tình trạng rò rỉ bộ nhớ (memory leak). Trong những hệ thống lớn, chương trình được chạy và các vùng nhớ được cấp phát liên tục nên nếu các lập trình viên không giải phóng vùng nhớ mỗi khi sử dụng xong thì việc cấp phát liên tục trong hệ thống sẽ khiến bộ nhớ bị cạn kiệt. Đối với các ngôn ngữ lập trình hiện đại hơn C/C++ như C#, Java thì việc thu hồi vùng nhớ sẽ rất tiện do các ngôn ngữ đó có hỗ trợ tự thu hồi vùng nhớ sau khi sử dụng (garbage collection) nên lập trình viên không cần phải đắn đo quá nhiều về việc đó. Nhưng với C/C++ thì ta buộc phải lưu ý về vấn đề này.
 
 ```cpp
 int *so_nguyen = (int*)malloc(sizeof(int));
-//do something with so_nguyen here
-free(so_nguyen); //dùng free để giải phóng
+// do something with so_nguyen here
+free(so_nguyen); // dùng free để giải phóng
 ```
 
 Tuy nhiên, không phải lúc nào ta cũng cấp phát thành công. Ví dụ trong trường hợp bộ nhớ không đủ cho vùng nhớ ta muốn thì việc cấp phát sẽ thất bại và biến con trỏ trả về `NULL`, đó là lí do ta nên kiểm tra `NULL` sau khi cấp phát.
 
-```
+```cpp
 int *so_nguyen = (int*)malloc(sizeof(int));
 if (so_nguyen == NULL) return false; //if fail then exit
 *so_nguyen... //do something with this
@@ -114,23 +134,23 @@ Và tất nhiên, xài xong phải giải phóng vùng nhớ:
 
 ```cpp
 int *so_nguyen = new int;
-delete so_nguyen; //ta dùng operator delete
+delete so_nguyen; // ta dùng operator delete trong C++
 ```
 
-Mẹo nhỏ: ta có thể khởi tạo giá trị tại vùng nhớ đó ngay khi vừa cấp phát:
+Mẹo nhỏ với C++: ta có thể khởi tạo giá trị tại vùng nhớ đó ngay khi vừa cấp phát:
 
 ```cpp
 int *so_nguyen = new int(10);
 int *so_nguyen2 = new int { *so_nguyen };
 ```
 
-## Cấp phát vùng nhớ liên tục – dynamically allocate array
+## Cấp phát vùng nhớ liên tục (cấp phát vùng nhớ là mảng) – dynamically allocate array
 
 ### Cú pháp của C: ta dùng 1 trong 2 hàm là `malloc` hoặc `calloc` (contiguous allocation – sự cấp phát liên tục).
 
 ```cpp
-//malloc(<số phần tử> * sizeof(kiểu dữ liệu của từng phần tử));
-//calloc(<số phần tử>, sizeof(kiểu dữ liệu của từng phần tử));
+// malloc(<số phần tử> * sizeof(kiểu dữ liệu của từng phần tử));
+// calloc(<số phần tử>, sizeof(kiểu dữ liệu của từng phần tử));
 
 int *arr_malloc = (int*)malloc(100 * sizeof(int));
 int *arr_calloc = (int*)calloc(100, sizeof(int));
@@ -159,6 +179,8 @@ Sau khi sử dụng xong thì ta cũng dùng `free` để giải phóng vùng nh
 // int *arr = new int[<số phần tử>];
 
 int *arr = new int[100];
+arr[0] = 100;
+arr[1] = 200;
 ```
 
 Cách khai báo mảng động ở C++ có phần khá giống với khai báo mảng tĩnh thông thường, đó là lí do một số bạn vẫn chuộng xài cú pháp của C++ do nó dễ nhớ hơn.
@@ -184,7 +206,7 @@ for (int i = 0; i < number_items; ++i)
     cin >> arr[i];
 ```
 
-Khác biệt thứ 2 đó là ta có thể tùy chỉnh kích thước vùng nhớ đã cấp phát như mở rộng hoặc thu hẹp, bằng cách dùng hàm `realloc` (re-allocation):
+Khác biệt thứ 2 đó là ta có thể tùy chỉnh kích thước vùng nhớ đã cấp phát như mở rộng hoặc thu hẹp, bằng cách dùng hàm `realloc` (re-allocation, hàm này là từ C):
 
 ```cpp
 int *arr = (int*)calloc(10, sizeof(int)); //cấp phát 10 phần tử
@@ -200,7 +222,7 @@ if (arr_new != NULL) //nếu tùy chỉnh thành công, tức là khác NULL
     arr = arr_new;
 ```
 
-Lưu ý rằng realloc là hàm thuộc C và trong C++ không có hàm hay operator nào dùng để thay đổi kích thước vùng nhớ đã cấp phát (tất nhiên bạn cũng có thể dùng realloc trong C++ nhưng hàm đó vẫn là của C). Nếu bạn muốn thay đổi kích thước vùng nhớ đã cấp phát 1 cách thuần C++ thì đơn giản chỉ là... cấp phát vùng nhớ mới với kích thước mong muốn, copy dữ liệu từ vùng nhớ cũ sang rồi hủy vùng nhớ cũ.
+Lưu ý rằng `realloc` là hàm thuộc C và trong C++ không có hàm hay operator nào dùng để thay đổi kích thước vùng nhớ đã cấp phát (tất nhiên bạn cũng có thể dùng `realloc` trong C++ nhưng gốc hàm đó vẫn là của C). Nếu bạn muốn thay đổi kích thước vùng nhớ đã cấp phát 1 cách thuần C++ thì đơn giản chỉ là... cấp phát vùng nhớ mới với kích thước mong muốn, copy dữ liệu từ vùng nhớ cũ sang rồi hủy vùng nhớ cũ.
 
 Mở rộng vùng nhớ (thuần C++, không dùng hàm của C như memset, memcpy, realloc...):
 
