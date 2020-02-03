@@ -13,7 +13,7 @@ layout: home
     border-style: hidden;
     border-radius: 40px;"
 >
-    &gt;WELCOME/&lt;
+    &lt;WELCOME/&gt;
 </p>
 
 <p style="text-align:center;">
