@@ -14,7 +14,7 @@ Vào thời gian đầu khi mới học con trỏ, chắc hẳn các bạn cảm
 
 # Nguồn gốc con trỏ trong C/C++
 
-Trước tiên mình sẽ nói sơ qua chút về ngôn ngữ Assembly (Hợp Ngữ) – ngôn ngữ lập trình nhanh nhất thế giới. Một trong những điểm khiến cho Assembly rất mạnh đó là khả năng cho phép lập trình viên tùy chỉnh mọi thứ của nó: như khi ta tạo ra một biến, ta có thể quyết định được biến đó nằm ở vùng nhớ nào (sau này mình sẽ nói thêm về vùng nhớ), có thể tăng hoặc giảm kích thước của vùng nhớ đã cấp cho biến đó tùy thích,… C/C++ đã kế thừa một số đặc điểm này và tổng hợp nó thành con trỏ.
+Trước tiên mình sẽ nói sơ qua chút về ngôn ngữ Assembly (Hợp Ngữ) – ngôn ngữ lập trình nhanh nhất thế giới (không tính mã máy vì mã máy không được xem như ngôn ngữ lập trình). Một trong những điểm khiến cho Assembly rất mạnh đó là khả năng cho phép lập trình viên tùy chỉnh mọi thứ của nó: như khi ta tạo ra một biến, ta có thể quyết định được biến đó nằm ở vùng nhớ nào (sau này mình sẽ nói thêm về vùng nhớ), có thể tăng hoặc giảm kích thước của vùng nhớ đã cấp cho biến đó tùy thích,… C/C++ đã kế thừa một số đặc điểm này và tổng hợp nó thành con trỏ.
 
 > Con trỏ:  thứ mạnh nhất và nguy hiểm nhất của C/C++, nhắc đến C/C++ là nhắc đến (sự nguy hiểm) con trỏ.
 
@@ -22,7 +22,7 @@ Nghe đến đây chắc nhiều bạn thấy sợ rồi phải không? Nhưng k
 
 # Khái niệm về con trỏ
 
-Ta sẽ nhắc lại chút về cái gọi là biến – variable. Biến, theo một cách giải thích ngắn gọn nhất cho người mới bắt đầu thì nó như là một nơi để lưu trữ dữ liệu của ta.
+Ta sẽ nhắc lại chút về cái gọi là biến – variable. Biến, theo một cách giải thích ngắn gọn nhất cho người mới bắt đầu thì nó như là một nơi để lưu trữ dữ liệu của ta và dữ liệu đó sẽ được lưu trữ trên RAM.
 
 ## Bộ nhớ máy tính (RAM) và biến (Variable)
 
@@ -37,14 +37,14 @@ int integer = 10;
 cout << &integer << endl;
 ```
 
-Vậy con trỏ là gì? Thực chất con trỏ cũng chỉ là một biến giúp ta có được địa chỉ của một biến bất kì.
+Vậy con trỏ là gì? Thực chất con trỏ cũng chỉ là một biến giúp ta lưu trữ được địa chỉ của một vùng nhớ bất kỳ.
 
 # Khai báo con trỏ trong C/C++
 
 Như mọi biến khác, biến con trỏ cũng có kiểu dữ liệu và cần được khai báo:
 
 ```cpp
-<kiểu dữ liệu> *<tên biến con trỏ>; //chú ý dấu *
+<data_type> *<pointer_variable_name>; //chú ý dấu *
 ```
 
 Ví dụ:
@@ -64,8 +64,8 @@ Giải thích: tất cả các biến `pInteger`, `pDouble`, `pCh1`, `pCh2` đ�
 Nếu các bạn thấy khó hiểu khi khai báo như vậy thì có thể sử dụng từ khóa `typedef` để khai báo như sau:
 
 ```cpp
-typedef <kiểu dữ liệu> *<tên kiểu con trỏ>;
-<tên kiểu con trỏ> <tên biến con trỏ>;
+typedef <data_type> *<pointer_type_name>;
+<pointer_type_name> <pointer_varialbe_name>;
 ```
 
 Ví dụ:
@@ -78,15 +78,17 @@ ptrInt pInteger2;
 
 Cả 2 biến `pInteger1` và `pInteger2` đều là biến con trỏ và trỏ tới vùng nhớ chứa biến kiểu `int`.
 
+> Thông thường theo một số chuẩn thì việc đặt tên biến con trỏ sẽ thường có chữ p (pointer) phía trước nhằm phân biệt với biến thông thường.
+
 # Liên kết địa chỉ vào biến con trỏ
 
 Khi mới khởi tạo, biến con trỏ mang một giá trị rác, nó chứa một giá trị nào đó và trỏ tới một vùng nhớ không xác định được, ta sẽ liên kết địa chỉ của biến vào biến con trỏ bằng cách sử dụng toán tử `&` như sau:
 
 ```cpp
-<tên biến con trỏ> = &<tên biến>;
+<pointer_variable> = &<normal_variable>;
 ```
 
-Hành động trên được gọi là reference - tham chiếu đến vùng nhớ. Ví dụ:
+Hành động trên được gọi là <b>reference</b> - tham chiếu đến vùng nhớ. Ví dụ:
 
 ```cpp
 int num_a = 10, num_b = 5;
@@ -113,7 +115,7 @@ cout << &pNum_a << endl; //địa chỉ của biến con trỏ pNum_a;
 
 # Con trỏ `NULL`
 
-Con trỏ `NULL` là con trỏ không trỏ vào đâu cả. Ở đây ta cần lưu ý: con trỏ `NULL` khác với con trỏ chưa được khởi tạo (là con trỏ mà nó trỏ đến vùng nhớ không xác định). Nếu các bạn còn nhớ thì `NULL` có khai báo là `#define NULL 0` trong C/C++, tức là `NULL` = 0.
+Con trỏ `NULL` là con trỏ không trỏ vào đâu cả. Ở đây ta cần lưu ý: con trỏ `NULL` khác với con trỏ chưa được khởi tạo (là con trỏ mà nó trỏ đến vùng nhớ không xác định hay thường gọi là vùng nhớ rác). Nếu các bạn còn nhớ thì `NULL` có khai báo là `#define NULL 0` trong C/C++, tức là `NULL` = 0.
 
 ```cpp
 int *pNum; //con trỏ chưa được khởi tạo
@@ -126,7 +128,7 @@ int *pNull3 (0); //cách khai báo con trỏ NULL thứ 3
 
 Con trỏ chỉ có nhiệm vụ là lưu địa chỉ của biến nên kích thước của mọi con trỏ là như nhau trên cùng một nền tảng:
 
-* MS-DOS thì con trỏ có kích thước 2 bytes (chắc chả ai xài cái này đâu…).
+* MS-DOS thì con trỏ có kích thước 2 bytes (giờ chắc chả ai xài cái này đâu…).
 * Nền tảng 32-bit thì con trỏ có kích thước 4 bytes.
 * Nền tảng 64-bit thì con trỏ có kích thước 8 bytes.
 
@@ -139,6 +141,8 @@ cout << sizeof(double*) << endl;
 ```
 
 Dù cho kích thước 3 kiểu dữ liệu `int`, `char`, `double` là khác nhau nhưng con trỏ của chúng đều có kích thước giống nhau. Nếu ta cho chạy trên IDE Visual Studio (x86) thì sẽ ra 4 (bytes), còn ở x64 thì sẽ ra 8 (bytes).
+
+Giải thích: địa chỉ mà con trỏ giữ thực chất chính là địa chỉ nằm trên RAM. Với hệ điều hành 32 bit thì dung lượng RAM tối đa nhận được sẽ là 4GB. Xét mỗi ô nhớ sẽ có giá trị là 1 byte (tương đương 8 bit), 4GB sẽ tương đương là 4,294,967,296 byte là 4,294,967,296 ô nhớ, và các ô nhớ sẽ được đánh số từ 0 - 4,294,965,295. Và các bạn đoán xem, với con trỏ kích thước 32 bit, tức là 4 byte, có thể chứa được các số trong khoảng 0 - 4,294,967,295, tức là có thể trỏ tới 4,294,967,296 ô nhớ, cũng chính là số lượng ô nhớ tương ứng ở hệ điều hành 32 bit.
 
 # Truyền địa chỉ - tham biến
 
@@ -199,13 +203,19 @@ int main()
 }
 ```
 
+Giải thích: hai tham số trong hàm `Swap` là `int *num_a` và `int *num_b` thực chất là 2 con trỏ, và nó sẽ giữ địa chỉ của 2 biến giá trị được truyền vào khi ta gọi `Swap(&a, &b)` trong hàm `main`. Và như đã đề cập phía trên, để lấy giá trị tại ô nhớ mà con trỏ đang trỏ tới thì ta sẽ sử dụng toán tử `*` như `*num_a` để lấy giá trị tại ô nhớ mà `num_a` đang trỏ tới.
+
+> Trên thực tế thì cách truyền tham số này phổ biến chủ yếu ở C thuần do C không có truyền tham chiếu mà chỉ C++ mới có truyền tham chiếu.
+
 # Một số lưu ý:
 
 * Con trỏ là khái niệm <b>cơ bản</b> quan trọng nhất trong C++.
 * Nắm rõ các quy tắc sau: ví dụ `int a, *pa = &a`;
     * `*pa` và `a` đều chỉ nội dung của biến a.
     * `pa` và `&a` đều chỉ địa chỉ biến a.
-* Không nên sử dụng con trỏ khi chưa được khởi tạo, kết quả không lường trước được.
+* Hiểu được reference và de-reference khác nhau thế nào.
+* Biết được thêm kiểu truyền tham số mới vào hàm.
+* Không nên sử dụng con trỏ khi chưa được khởi tạo, kết quả không lường trước được do giá trị trong đó là giá trị rác.
 
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
