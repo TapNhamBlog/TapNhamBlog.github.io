@@ -5,16 +5,13 @@
 layout: home
 ---
 
-<p style="
+<h1 style="
     font-family: monospace;
-    font-size:120px;
     text-align:center;
-    background-color: lightgrey;
-    border-style: hidden;
-    border-radius: 40px;"
+    border-style: hidden;"
 >
     &lt;WELCOME/&gt;
-</p>
+</h1>
 
 <p style="text-align:center;">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">

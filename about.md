@@ -15,11 +15,7 @@ permalink: /about/
 <link rel="icon" type="image/png" href="https://tapnhamblog.github.io/_img/HuaAnhMinh.ico">
 
 # Về tác giả
-Chào mọi người, mình là Hứa Anh Minh, là tác giả của blog này. Hiện tại mình là sinh viên khoa Công Nghệ Thông Tin chương trình đặc biệt của Trường Đại học Khoa Học Tự Nhiên Tp.HCM.
-
-<p style="text-align:center;">
-<img style="text-align:center;" src="https://tapnhamblog.github.io/_img/HuaAnhMinh.jpg" alt="Hua Anh Minh" height="240" width="240" align="center">
-</p>
+Chào mọi người, mình là Hứa Anh Minh, là tác giả của blog này. Hiện tại mình là sinh viên khoa Công Nghệ Thông Tin chương trình đặc biệt của Trường Đại học Khoa Học Tự Nhiên Tp.HCM cũng như đang làm việc tại Zalo.
 
 # Về blog
 Mục đích mình viết blog này chủ yếu nhằm nâng cao khả năng diễn đạt, viết lách, nâng cao kiến thức về công nghệ như chia sẻ thông tin, review công nghệ mới và nhận phản hồi từ người xem.
@@ -35,8 +31,8 @@ Mọi việc chia sẻ, trích dẫn từ bài viết của blog đều phải t
 * Không được sửa đổi hay làm thay đổi nội dung bài viết.
 
 # Cách tìm một bài viết:
-Bấm Ctrl + F rồi nhập tên bài viết cần tìm.
+Bấm Ctrl + F (Windows, Linux) hoặc Command + F (macOS) rồi nhập tên bài viết cần tìm.
 
 <p style="text-align:center;">
-© 2017-2018 Hứa Anh Minh, 2018 - 2018 — built with Jekyll default theme
+© 2017-2020 Tapnhamblog, 2017 - 2020 — built with Jekyll default theme
 </p>
